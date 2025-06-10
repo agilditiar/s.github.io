@@ -1,0 +1,128 @@
+    <!DOCTYPE html>
+    <html lang="id">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agilditiar_14</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            fontFamily: { inter: ['Inter', 'sans-serif'] },
+            }
+        }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        html {
+        scroll-behavior: smooth;
+        }
+    </style>
+    </head>
+    <body class="font-inter transition duration-500 bg-gradient-to-br from-white via-indigo-50 to-pink-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 dark:text-white">
+
+    <!-- Toggle Dark Mode -->
+    <div class="fixed top-5 right-5 z-50">
+    <button id="toggleTheme" class="bg-white dark:bg-gray-700 text-gray-800 dark:text-white p-2 rounded-full shadow hover:scale-110 transition">
+        <i data-lucide="moon-star" class="w-5 h-5"></i>
+    </button>
+    </div>
+
+    <!-- Container -->
+    <main class="max-w-4xl mx-auto px-6 py-12">
+    
+    <!-- Header -->
+    <section class="text-center mb-14">
+    <img class="w-40 h-40 mx-auto rounded-full border-4 border-indigo-500 shadow-lg object-cover" src="aku.jpg" alt="Foto Profil" />
+    <h1 class="mt-5 text-3xl font-extrabold text-gray-800 dark:text-white">Agil Alditiar Safara</h1>
+    <p id="typed" class="text-indigo-600 font-semibold mt-1 h-6 text-lg"></p>
+    <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">📍 STIKOM | Mahasiswa Teknik Informatika</p>
+    <p class="mt-2 text-gray-600 dark:text-gray-300">📧 alditiarsafara@gmail.com</p>
+    <div class="flex justify-center mt-4 gap-3">
+        <a href="https://www.instagram.com/agilditiar_14?igsh=djZtcWdsczE5Njhr" target="_blank" class="text-pink-600 hover:text-pink-800 text-xl"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+        <a href="https://github.com/agilditiar/praktikum-fullstack" target="_blank" class="text-gray-800 dark:text-white hover:text-indigo-600"><i data-lucide="github" class="w-5 h-5"></i></a>
+    </div>
+    </section>
+
+    <!-- Skill Section -->
+    <section class="mb-12">
+        <h2 class="text-2xl font-bold text-indigo-700 dark:text-indigo-300 mb-6">💻 Skill</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <div class="bg-white dark:bg-gray-700 p-4 rounded-xl shadow hover:scale-105 transition text-center">HTML & CSS</div>
+        <div class="bg-white dark:bg-gray-700 p-4 rounded-xl shadow hover:scale-105 transition text-center">JavaScript</div>
+        <div class="bg-white dark:bg-gray-700 p-4 rounded-xl shadow hover:scale-105 transition text-center">React</div>
+        <div class="bg-white dark:bg-gray-700 p-4 rounded-xl shadow hover:scale-105 transition text-center">Node.js</div>
+        <div class="bg-white dark:bg-gray-700 p-4 rounded-xl shadow hover:scale-105 transition text-center">Express</div>
+        <div class="bg-white dark:bg-gray-700 p-4 rounded-xl shadow hover:scale-105 transition text-center">MySQL</div>
+        </div>
+    </section>
+
+    <!-- Hobi Section -->
+    <section class="mb-12">
+    <h2 class="text-2xl font-bold text-indigo-700 dark:text-indigo-300 mb-6">🎯 Hobi</h2>
+    <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+        <div class="bg-white dark:bg-gray-700 p-4 rounded-xl shadow hover:scale-105 transition text-center">
+        <img src="mancing.jpg" alt="Mancing" class="mx-auto mb-3 rounded-full w-40 h-40 object-cover border-4 border-indigo-400 shadow-md">
+        <p class="font-semibold text-gray-800 dark:text-white">Mancing</p>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-4 rounded-xl shadow hover:scale-105 transition text-center">
+        <img src="bassing.jpg" alt="Bermain Musik" class="mx-auto mb-3 rounded-full w-40 h-40 object-cover border-4 border-indigo-400 shadow-md">
+        <p class="font-semibold text-gray-800 dark:text-white">Bermain Musik</p>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-4 rounded-xl shadow hover:scale-105 transition text-center">
+        <img src="kamar.jpg" alt="Mendengarkan Musik" class="mx-auto mb-3 rounded-full w-40 h-40 object-cover border-4 border-indigo-400 shadow-md">
+        <p class="font-semibold text-gray-800 dark:text-white">Mendengarkan Musik</p>
+        </div>
+    </div>
+    </section>
+
+    <!-- Proyek Section -->
+    <section>
+        <h2 class="text-2xl font-bold text-indigo-700 dark:text-indigo-300 mb-6">🚀 Proyek</h2>
+        <div class="grid gap-6 md:grid-cols-2">
+        <div class="bg-white dark:bg-gray-700 p-5 rounded-xl shadow hover:shadow-lg transition">
+            <h3 class="font-semibold text-lg text-gray-800 dark:text-white">Aplikasi daftar belanja</h3>
+            <p class="text-sm mt-2 text-gray-600 dark:text-gray-300">App React Native untuk mencatat belanja, mendukung CRUD & input banyak.</p>
+            <a href="https://github.com/agilditiar/aplikasi" target="_blank" class="text-indigo-600 hover:underline mt-2 inline-block">Lihat di GitHub →</a>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-5 rounded-xl shadow hover:shadow-lg transition">
+            <h3 class="font-semibold text-lg text-gray-800 dark:text-white">Soon</h3>
+            <p class="text-sm mt-2 text-gray-600 dark:text-gray-300">________________Soon__________________</p>
+            <a href="https://github.com/kamu/belanja-app" target="_blank" class="text-indigo-600 hover:underline mt-2 inline-block">Jangan Lihat Dulu →</a>
+        </div>
+        </div>
+    </section>
+
+    <footer class="text-center mt-16 text-xs text-gray-400 dark:text-gray-500">
+        © 2025 | Agil Alditiar Safara
+    </footer>
+    </main>
+
+    <!-- Script: Dark Mode Toggle -->
+    <script>
+    const toggle = document.getElementById("toggleTheme");
+    toggle.addEventListener("click", () => {
+        document.documentElement.classList.toggle("dark");
+    });
+    lucide.createIcons();
+    </script>
+
+    <!-- Script: Typewriter Effect -->
+    <script>
+    const text = "Mahasiswa Teknik Informatika";
+    const typedElement = document.getElementById("typed");
+    let i = 0;
+    function typeText() {
+        if (i < text.length) {
+        typedElement.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeText, 60);
+        }
+    }
+    window.onload = typeText;
+    </script>
+    </body>
+    </html>
